@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Delicious Food – Contact & Reservation</title>
+<!--Favicon icon-->
+  <link rel="icon" type="images/jpg" href="images/logo.jpg">
+
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+  <!--CSS linking-->
+   <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<header class="navbar">
+    <div class="logo">
+    <img src="images/logo.jpg" alt="logo">
+    <span>Spice Hub</span>
+</div>
+
+    <nav>
+        <ul class="nav-links">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+    </nav>
+
+    <button id="modeToggle" class="mode-btn">🌙</button>
+</header>
+
+<!-- HERO -->
+<div class="hero">
+  <h1>Contact Us</h1>
+  <p>We'd love to hear from you. Reserve a table or get in touch with any questions.</p>
+  <div class="hero-accent-bar">
+    <span class="bar1"></span>
+    <span class="bar2"></span>
+    <span class="bar3"></span>
+  </div>
+</div>
+
+<!-- MAIN -->
+<div class="main-grid">
+
+  <!-- LEFT: Info -->
+  <div class="info-panel">
+    <h2>Get in Touch</h2>
+
+    <div class="info-item">
+      <div class="info-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+      </div>
+      <div class="info-content">
+        <strong>Address</strong>
+        <p>123 Culinary Street<br>Foodie District, NY 10001</p>
+      </div>
+    </div>
+
+    <div class="info-item">
+      <div class="info-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.27h3a2 2 0 0 1 2 1.72c.127.96.362 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.91a16 16 0 0 0 6 6l.95-.95a2 2 0 0 1 2.11-.45c.907.338 1.85.573 2.81.7A2 2 0 0 1 21.73 16.92z"/></svg>
+      </div>
+      <div class="info-content">
+        <strong>Phone</strong>
+        <a href="tel:+923365667899">0336 5667899</a>
+      </div>
+    </div>
+
+    <div class="info-item">
+      <div class="info-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+      </div>
+      <div class="info-content">
+        <strong>Email</strong>
+        <a href="mailto:info@SpiceHub.com">info@SpiceHub.com</a>
+      </div>
+    </div>
+
+    <div class="info-item">
+      <div class="info-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+      </div>
+      <div class="info-content">
+        <strong>Hours</strong>
+        <p>Monday – Thursday: 11:00 AM – 10:00 PM<br>
+           Friday – Saturday: 11:00 AM – 11:00 PM<br>
+           Sunday: 10:00 AM – 9:00 PM</p>
+      </div>
+    </div>
+
+    <div class="map-placeholder">
+  <iframe
+    src="https://www.google.com/maps?q=Islamabad+Pakistan&output=embed"
+    width="100%"
+    height="200"
+    style="border:0; border-radius: 10px;"
+    loading="lazy">
+  </iframe>
+</div>
+  </div>
+
+  <!-- RIGHT: Form -->
+  <div class="form-panel">
+    <h2>Make a Reservation</h2>
+    <div class="success-msg" id="successMsg">✅ Your reservation has been submitted! We'll confirm shortly.</div>
+
+    <div class="form-group">
+      <label>Full Name <span>*</span></label>
+      <input type="text" id="fullName" placeholder="Enter your name" />
+    </div>
+
+    <div class="form-row">
+      <div class="form-group">
+        <label>Email <span>*</span></label>
+        <input type="email" id="email" placeholder="abc@email.com" />
+      </div>
+      <div class="form-group">
+        <label>Phone <span>*</span></label>
+        <input type="tel" id="phone" placeholder="+92 300 0000000" />
+      </div>
+    </div>
+
+    <div class="form-row">
+      <div class="form-group">
+        <label>Date <span>*</span></label>
+        <input type="date" id="resDate" />
+      </div>
+      <div class="form-group">
+        <label>Time <span>*</span></label>
+        <input type="time" id="resTime" />
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label>Number of Guests <span>*</span></label>
+      <select id="guests">
+        <option value="">Select guests</option>
+        <option value="1">1 Guest</option>
+        <option value="2" selected>2 Guests</option>
+        <option value="3">3 Guests</option>
+        <option value="4">4 Guests</option>
+        <option value="5">5 Guests</option>
+        <option value="6">6 Guests</option>
+        <option value="7+">7+ Guests (large group)</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label>Special Requests <small style="font-weight:400;text-transform:none;">(Optional)</small></label>
+      <textarea id="requests" placeholder="Dietary restrictions, special occasions, allergies, etc."></textarea>
+    </div>
+
+    <button class="btn-submit" id="submitBtn">Submit Reservation</button>
+  </div>
+</div>
+<!--footor-->
+<footer class="footer">
+  <div class="footer-container">
+
+    <!-- Column 1 -->
+    <div class="footer-col">
+      <h2 class="logo">Spice Hub</h2>
+      <p>
+        Experience fine dining at its finest. Fresh ingredients, expert
+        preparation, unforgettable flavors.
+      </p>
+    </div>
+
+    <!-- Column 2 -->
+    <div class="footer-col">
+      <h3>Contact</h3>
+      <p><span>📍</span> 123 Culinary Street, Foodie District, NY 10001</p>
+      <p><span>📞</span> (555) 123-4567</p>
+      <p><span>✉</span> info@SpiceHub.com</p>
+    </div>
+
+    <!-- Column 3 -->
+    <div class="footer-col">
+      <h3>Hours</h3>
+      <p><span>🕒</span>Mon - Thu: 11:00 AM - 10:00 PM</p>
+      <p><span>🕒</span>Fri - Sat: 11:00 AM - 11:00 PM</p>
+      <p><span>🕒</span>Sunday: 10:00 AM - 9:00 PM</p>
+    </div>
+
+    <!-- Column 4 -->
+    <div class="footer-col">
+      <h3>Follow Us</h3>
+      <div class="social-links">
+        <a href="#">Facebook</a><br>
+        <a href="#">Instagram</a><br>
+        <a href="#">Twitter</a><br>
+      </div>
+    </div>
+
+  </div>
+
+  <hr>
+
+  <p class="copyright">
+    © 2026 Spice Hub Restaurant. All rights reserved.
+  </p>
+</footer>
+<script src="contact.js"></script>
+</body>
+</html>
