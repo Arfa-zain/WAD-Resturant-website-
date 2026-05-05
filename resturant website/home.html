@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Savoria Restaurant</title>
+
+    <link rel="icon" type="images/jpg" href="images/logo.jpg">
+    <link rel="stylesheet" href="home.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!--Audio-->
+<audio id="welcomeAudio" src="videos/Audio1.mp3"></audio>
+<!-- NAVBAR -->
+<header class="navbar">
+    <div class="logo">
+    <img src="images/logo.jpg" alt="logo">
+    <span>Spice Hub</span>
+</div>
+
+    <nav>
+        <ul class="nav-links">
+            <li><a href="home.html" class="active">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <button id="modeToggle" class="mode-btn">🌙</button>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+    <video class="bg-video" autoplay muted loop playsinline>
+        <source src="videos/resturant video.mp4" type="video/mp4">
+    </video>
+
+
+    <div class="overlay"></div>
+
+    <div class="hero-content">
+        <h1>Welcome to Spice Hub</h1>
+        <p>Where culinary artistry meets exceptional dining</p>
+
+        <div class="buttons">
+    <button class="home-btn" onclick="goToMenu()">View Menu</button>
+    <button class="home-btn" onclick="scrollToReservation()">Reserve Table</button>
+    <button class="home-btn" onclick="playAudio()">▶ Welcome Audio</button>
+</div>
+    </div>
+</section>
+
+<!-- FEATURES -->
+<section class="features" id="about">
+    <div class="feature-box">
+        <div class="icon">👨‍🍳</div>
+        <h3>Expert Chefs</h3>
+        <p>Our talented team brings years of culinary expertise</p>
+    </div>
+
+    <div class="feature-box">
+        <div class="icon">⭐</div>
+        <h3>Premium Quality</h3>
+        <p>Only the finest ingredients make it to your plate</p>
+    </div>
+
+    <div class="feature-box">
+        <div class="icon">⏰</div>
+        <h3>Open Daily</h3>
+        <p>Serving lunch and dinner seven days a week</p>
+    </div>
+</section>
+
+<!-- FEATURED -->
+<section class="featured">
+    <h2>Featured Dishes</h2>
+    <p>Discover our most popular creations, crafted with passion and precision</p>
+</section>
+
+<!-- MENU PREVIEW -->
+<section class="menu">
+    <div class="card">
+        <img src="images/bariyani.jpeg">
+        <div class="content">
+            <h3>Karachi Biryani <span>Rs42</span></h3>
+            <p>Spicy, aromatic delight</p>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="images/burger.jpeg">
+        <div class="content">
+            <h3>Grilled Burger <span>$36</span></h3>
+            <p>Juicy and flavorful</p>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="images/bbq.jpeg">
+        <div class="content">
+            <h3>BBQ Platter <span>$28</span></h3>
+            <p>Smoky grilled perfection</p>
+        </div>
+    </div>
+</section>
+<!--reviews-->
+<section class="reviews">
+    <h1>What Our Customers Say</h1>
+    <p class="subtitle">Loved by food lovers every day</p>
+
+    <div class="slider">
+
+        <button class="prev" onclick="prevSlide()">❮</button>
+
+        <div class="review-container" id="reviewContainer">
+
+            <div class="review-card">
+                <div class="stars">★★★★★</div>
+                <p>"Amazing taste and fast service. The biryani was outstanding!"</p>
+                <h3>- Sarah Khan</h3>
+            </div>
+
+            <div class="review-card">
+                <div class="stars">★★★★★</div>
+                <p>"Beautiful ambiance and delicious food. Highly recommended."</p>
+                <h3>- Ahmed Ali</h3>
+            </div>
+
+            <div class="review-card">
+                <div class="stars">★★★★☆</div>
+                <p>"Great experience with family. Friendly staff and fresh meals."</p>
+                <h3>- Maryam Noor</h3>
+            </div>
+
+            <div class="review-card">
+                <div class="stars">★★★★★</div>
+                <p>"Best restaurant in town. Loved the BBQ platter!"</p>
+                <h3>- Ali Raza</h3>
+            </div>
+
+            <div class="review-card">
+                <div class="stars">★★★★★</div>
+                <p>"Food quality is excellent and service is quick."</p>
+                <h3>- Sana Ahmed</h3>
+            </div>
+
+        </div>
+
+        <button class="next" onclick="nextSlide()">❯</button>
+
+    </div>
+    <div class="dots">
+        <span onclick="currentSlide(0)"></span>
+        <span onclick="currentSlide(1)"></span>
+        <span onclick="currentSlide(2)"></span>
+        <span onclick="currentSlide(3)"></span>
+    </div>
+
+   <button class="review-btn" onclick="openForm()">Leave a Review</button>
+</section>
+
+
+<!-- Modal -->
+<div id="reviewModal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeForm()">&times;</span>
+
+        <h2>Leave a Review</h2>
+
+        <form id="reviewForm">
+            <input type="text" placeholder="Your Name" required>
+
+            <input type="email" placeholder="Your Email" required>
+
+            <label>Rating:</label>
+            <!--previous rating
+            <select required>
+                <option value="">Select Rating</option>
+                <option>⭐</option>
+                <option>⭐⭐</option>
+                <option>⭐⭐⭐</option>
+                <option>⭐⭐⭐⭐</option>
+                <option>⭐⭐⭐⭐⭐</option>
+            </select> -->
+            <div class="rating">
+    <span data-value="1">★</span>
+    <span data-value="2">★</span>
+    <span data-value="3">★</span>
+    <span data-value="4">★</span>
+    <span data-value="5">★</span>
+</div>
+
+<input type="hidden" id="ratingValue" value="0">
+
+            <textarea placeholder="Write your review..." required></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</div>
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-container">
+
+    <!-- Column 1 -->
+    <div class="footer-col">
+      <h2 class="logo">Spice Hub</h2>
+      <p>
+        Experience fine dining at its finest. Fresh ingredients, expert
+        preparation, unforgettable flavors.
+      </p>
+    </div>
+
+    <!-- Column 2 -->
+    <div class="footer-col">
+      <h3>Contact</h3>
+      <p><span>📍</span> 123 Culinary Street, Foodie District, NY 10001</p>
+      <p><span>📞</span> (555) 123-4567</p>
+      <p><span>✉</span> info@SpiceHub.com</p>
+    </div>
+
+    <!-- Column 3 -->
+    <div class="footer-col">
+      <h3>Hours</h3>
+      <p><span>🕒</span>Mon - Thu: 11:00 AM - 10:00 PM</p>
+      <p><span>🕒</span>Fri - Sat: 11:00 AM - 11:00 PM</p>
+      <p><span>🕒</span>Sunday: 10:00 AM - 9:00 PM</p>
+    </div>
+
+    <!-- Column 4 -->
+    <div class="footer-col">
+      <h3>Follow Us</h3>
+      <div class="social-links">
+        <a href="#">Facebook</a><br>
+        <a href="#">Instagram</a><br>
+        <a href="#">Twitter</a><br>
+      </div>
+    </div>
+
+  </div>
+
+  <hr>
+
+  <p class="copyright">
+    © 2026 Spice Hub Restaurant. All rights reserved.
+  </p>
+</footer>
+
+
+
+<script src="home.js"></script>
+
+</body>
+</html>

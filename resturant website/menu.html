@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <meta charset="UTF-8">
+    <title>Restaurant Menu</title>
+    <!--Favicon icon-->
+    <link rel="icon" type="images/jpg" href="images/logo.jpg">
+    <!--CSS linking-->
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+
+<!-- NAVBAR -->
+<header class="navbar">
+    <div class="logo">
+    <img src="images/logo.jpg" alt="logo">
+    <span>Spice Hub</span>
+</div>
+
+    <nav>
+        <ul class="nav-links">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="menu.html" class="active">Menu</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <button id="modeToggle" class="mode-btn">🌙</button>
+</header>
+
+<!-- Tabs -->
+<div class="tabs">
+    <button class="tab active" onclick="showCategory('appetizers', event)">Appetizers</button>
+<button class="tab" onclick="showCategory('main', event)">Main Courses</button>
+<button class="tab" onclick="showCategory('drinks', event)">Beverages</button>
+<button class="tab" onclick="showCategory('desserts', event)">Desserts</button>
+</div>
+
+<h2 class="section-title">Featured</h2>
+
+<!-- APPETIZERS -->
+<div id="appetizers" class="menu-section active-section">
+    <div class="card-container">
+
+        <div class="card">
+            <img src="images/Soup.jpg">
+            <div class="card-content">
+                <div class="card-title">
+                    <span>Soup</span>
+                    <span class="price">Rs. 250</span>
+                </div>
+                <div class="card-desc">Warm and comforting soup made with fresh ingredients</div>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="images/garlic bread.jpg">
+            <div class="card-content">
+                <div class="card-title">
+                    <span>Garlic Bread</span>
+                    <span class="price">Rs. 250</span>
+                </div>
+                <div class="card-desc">Toasted bread topped with garlic butter and herbs</div>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="images/Crakers.jpg">
+            <div class="card-content">
+                <div class="card-title">
+                    <span>Rice Crackers</span>
+                    <span class="price">Rs. 250</span>
+                </div>
+                <div class="card-desc">Light and crispy crackers served with flavorful seasoning</div>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="images/Fish tacos.jpg">
+            <div class="card-content">
+                <div class="card-title">
+                    <span>Fish Tacos</span>
+                    <span class="price">Rs. 250</span>
+                </div>
+                <div class="card-desc">Soft tortillas filled with crispy fish, fresh veggies, and tangy sauce</div>
+            </div>
+        </div>
+
+        <div class="card nachos">
+            <img src="images/Nachos1.jpg">
+            <div class="card-content">
+                <div class="card-title">
+                    <span>Nachos</span>
+                    <span class="price">Rs. 250</span>
+                </div>
+                <div class="card-desc">Crispy tortilla chips topped with melted cheese and sauces</div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!-- MAIN COURSES -->
+<div id="main" class="menu-section">
+
+    <!-- DESI -->
+    <h2 class="sub-heading">Desi</h2>
+    <div class="card-container">
+
+        <div class="card">
+            <img src="images/Biryani.jpg">
+            <div class="card-content">
+                <div class="card-title">
+                    <span>Chicken Biryani</span>
+                    <span class="price">Rs. 350</span>
+                </div>
+                <div class="card-desc">Aromatic rice with spices and chicken</div>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="images/Beef karahi.jpg">
+            <div class="card-content">
+                <div class="card-title">
+                    <span>Beef Karahi</span>
+                    <span class="price">Rs. 900</span>
+                </div>
+                <div class="card-desc">Traditional spicy beef curry</div>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="images/chicken Karahi.jpg">
+            <div class="card-content">
+                <div class="card-title">
+                    <span>Chicken Karahi</span>
+                    <span class="price">Rs. 250</span>
+                </div>
+                <div class="card-desc">Traditional spicy chicken curry</div>
+            </div>
+        </div>
+    
+
+        <div class="card">
+            <img src="images/Haleem.jpg">
+            <div class="card-content">
+                <div class="card-title">
+                    <span>Haleem</span>
+                    <span class="price">Rs. 300</span>
+                </div>
+                <div class="card-desc">Thick blend of meat and lentils</div>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="images/nihari.jpg">
+            <div class="card-content">
+                <div class="card-title">
+                    <span>Nihari</span>
+                    <span class="price">Rs. 600</span>
+                </div>
+                <div class="card-desc">Slow-cooked beef stew</div>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="images/yakhni pulao.jpg">
+            <div class="card-content">
+                <div class="card-title">
+                    <span>Yakhni Pulao</span>
+                    <span class="price">Rs. 250</span>
+                </div>
+                <div class="card-desc">Aromatic rice cooked in rich yakhni (meat broth) with tender meat and mild spices for a comforting flavor</div>
+            </div>
+        </div>
+
+       <div class="card">
+            <img src="images/sea kabab.jpg">
+            <div class="card-content">
+                <div class="card-title">
+                    <span>Sea Kabab</span>
+                    <span class="price">Rs. 250</span>
+                </div>
+                <div class="card-desc">Grilled seafood kebabs made with spiced minced fish or prawns, served juicy and flavorful</div>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="images/tikka.jpg">
+            <div class="card-content">
+                <div class="card-title">
+                    <span>Chicken Tikka</span>
+                    <span class="price">Rs. 450</span>
+                </div>
+                <div class="card-desc">Grilled BBQ chicken</div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- SIDE DISHES -->
+    <h2 class="sub-heading">Side Dishes</h2>
+    <div class="card-container">
+
+        <div class="card">
+            <img src="images/naan.jpg">
+            <div class="card-content">
+                <div class="card-title">
+                    <span>Naan</span>
+                    <span class="price">Rs. 50</span>
+                </div>
+                <div class="card-desc">Butter naan, plain naan</div>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="images/roti.jpg">
+            <div class="card-content">
+                <div class="card-title">
+                    <span>Roti</span>
+                    <span class="price">Rs. 50</span>
+                </div>
+                <div class="card-desc">Soft and freshly baked flatbread made from whole wheat flour, served hot with meals for a traditional taste.</div>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="images/raita.jpg">
+            <div class="card-content">
+                <div class="card-title">
+                    <span>Raita</span>
+                    <span class="price">Rs. 80</span>
+                </div>
+                <div class="card-desc">Yogurt with herbs</div>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="images/Salad.jpg">
+            <div class="card-content">
+                <div class="card-title">
+                    <span>Salad</span>
+                    <span class="price">Rs. 80</span>
+                </div>
+                <div class="card-desc">Fresh Salad</div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Chinese -->
+    <h2 class="sub-heading">Chinese</h2>
+    <div class="card-container">
+
+        <div class="card">
+            <img src="images/chicken chowmein.jpg">
+            <div class="card-content">
+                <div class="card-title">
+                    <span>Chicken Chow Mein</span>
+                    <span class="price">Rs. 500</span>
+                </div>
+                <div class="card-desc">Stir-fried noodles with chicken, vegetables, and savory sauces</div>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="images/chicken manchurian.jpg">
+            <div class="card-content">
+                <div class="card-title">
+                    <span>Chicken Manchurian</span>
+                    <span class="price">Rs. 80</span>
+                </div>
+                <div class="card-desc">Juicy chicken balls in a spicy, tangy gravy sauce</div>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="images/fried rice.jpg">
+            <div class="card-content">
+                <div class="card-title">
+                    <span>Fried Rice</span>
+                    <span class="price">Rs. 80</span>
+                </div>
+                <div class="card-desc">Rice stir-fried with eggs, vegetables, and flavorful sauces</div>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="images/dumplings.jpg">
+            <div class="card-content">
+                <div class="card-title">
+                    <span>Dumplings</span>
+                    <span class="price">Rs. 50</span>
+                </div>
+                <div class="card-desc">Soft dough pockets filled with seasoned vegetables or meat, steamed or fried and served with dipping sauce for a flavorful bite.</div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- FAST FOOD -->
+    <h2 class="sub-heading">Fast Food</h2>
+    <div class="card-container">
+
+        <div class="card">
+            <img src="images/Chicken burger.jpg">
+            <div class="card-content">
+                <div class="card-title">
+                    <span>Zinger Burger</span>
+                    <span class="price">Rs. 450</span>
+                </div>
+                <div class="card-desc">Crispy chicken burger</div>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="images/Beef burger.jpg">
+            <div class="card-content">
+                <div class="card-title">
+                    <span>Beef Burger</span>
+                    <span class="price">Rs. 500</span>
+                </div>
+                <div class="card-desc">Juicy beef patty burger</div>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="images/loaded fries.jpg">
+            <div class="card-content">
+                <div class="card-title">
+                    <span>Loaded Fries</span>
+                    <span class="price">Rs. 250</span>
+                </div>
+                <div class="card-desc">Fries topped with cheese and sauces</div>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="images/Shawarma.jpg">
+            <div class="card-content">
+                <div class="card-title">
+                    <span>Shawarma</span>
+                    <span class="price">Rs. 250</span>
+                </div>
+                <div class="card-desc">Chicken wrap with garlic sauce</div>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="images/tikka pizza.jpg">
+            <div class="card-content">
+                <div class="card-title">
+                    <span>Chicken Tikka</span>
+                    <span class="price">Rs. 250</span>
+                </div>
+                <div class="card-desc">Tender chicken pieces marinated in spices and grilled to perfection over charcoal</div>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="images/fajita.jpg">
+            <div class="card-content">
+                <div class="card-title">
+                    <span>Chicken Fajita</span>
+                    <span class="price">Rs. 250</span>
+                </div>
+                <div class="card-desc">Grilled chicken strips cooked with capsicum and onions in a smoky fajita-style seasoning</div>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="images/chicken tandoori pizza.jpg">
+            <div class="card-content">
+                <div class="card-title">
+                    <span>Chicken Tandoori</span>
+                    <span class="price">Rs. 250</span>
+                </div>
+                <div class="card-desc">Juicy chicken marinated in traditional spices and yogurt, roasted in a tandoor for a smoky flavor</div>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="images/cheese.jpg">
+            <div class="card-content">
+                <div class="card-title">
+                    <span>Cheese Pizza</span>
+                    <span class="price">Rs. 250</span>
+                </div>
+                <div class="card-desc">Classic pizza topped with rich tomato sauce and a generous layer of melted cheese</div>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+<!-- DRINKS -->
+<div id="drinks" class="menu-section">
+    <div class="card-container">
+
+        <div class="card">
+            <img src="images/soft drink.jpg">
+            <div class="card-content">
+                <div class="card-title">
+                    <span>Soft Drinks</span>
+                    <span class="price">Rs. 120</span>
+                </div>
+                <div class="card-desc">Flavors: Cola, Lemon, Orange</div>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="images/tea.jpg">
+            <div class="card-content">
+                <div class="card-title">
+                    <span>Tea</span>
+                    <span class="price">Rs. 150</span>
+                </div>
+                <div class="card-desc">Green Tea</div>
+            </div>
+        </div>
+
+         <div class="card">
+            <img src="images/milk tea.jpg">
+            <div class="card-content">
+                <div class="card-title">
+                    <span>Milk Tea</span>
+                    <span class="price">Rs. 150</span>
+                </div>
+                <div class="card-desc">Classic tea brewed with milk and sugar for a rich and comforting taste</div>
+            </div>
+        </div>
+
+
+         <div class="card">
+            <img src="images/cold coffee.jpg">
+            <div class="card-content">
+                <div class="card-title">
+                    <span>Cold Coffee</span>
+                    <span class="price">Rs. 150</span>
+                </div>
+                <div class="card-desc">Chilled coffee blended with milk and ice for a refreshing energizing drink</div>
+            </div>
+        </div>
+
+         <div class="card">
+            <img src="images/cappuccino.jpg">
+            <div class="card-content">
+                <div class="card-title">
+                    <span>Cappuccino</span>
+                    <span class="price">Rs. 150</span>
+                </div>
+                <div class="card-desc">Espresso topped with steamed milk and a light layer of frothy foam</div>
+            </div>
+        </div>
+
+         <div class="card">
+            <img src="images/latte.jpg">
+            <div class="card-content">
+                <div class="card-title">
+                    <span>Latte</span>
+                    <span class="price">Rs. 150</span>
+                </div>
+                <div class="card-desc">Smooth espresso mixed with steamed milk for a creamy and mild coffee flavor</div>
+            </div>
+        </div>
+
+         <div class="card">
+            <img src="images/juices.jpg">
+            <div class="card-content">
+                <div class="card-title">
+                    <span>Juices</span>
+                    <span class="price">Rs. 150</span>
+                </div>
+                <div class="card-desc">Freshly prepared fruit juices packed with natural flavor and vitamins<br> Mango, Orange, Apple, Pemogranate</div>
+            </div>
+        </div>
+
+         <div class="card">
+            <img src="images/slush.jpg">
+            <div class="card-content">
+                <div class="card-title">
+                    <span>Slush</span>
+                    <span class="price">Rs. 150</span>
+                </div>
+                <div class="card-desc">Ice-blended flavored drink served cold and refreshing</div>
+            </div>
+        </div>
+
+         <div class="card">
+            <img src="images/shakes.jpg">
+            <div class="card-content">
+                <div class="card-title">
+                    <span>Shakes</span>
+                    <span class="price">Rs. 150</span>
+                </div>
+                <div class="card-desc">Thick and creamy blended drinks made with milk, ice cream, and flavors like chocolate or vanilla</div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!-- DESSERTS -->
+<div id="desserts" class="menu-section">
+    <div class="card-container">
+
+        <div class="card">
+            <img src="images/pastry.jpg">
+            <div class="card-content">
+                <div class="card-title">
+                    <span>Pastries</span>
+                    <span class="price">Rs. 300</span>
+                </div>
+                <div class="card-desc">Light and fluffy layered desserts topped with cream and sweet flavors</div>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="images/gulab jamun.jpg">
+            <div class="card-content">
+                <div class="card-title">
+                    <span>Gulab Jamun</span>
+                    <span class="price">Rs. 200</span>
+                </div>
+                <div class="card-desc">Sweet syrup balls</div>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="images/kheer.jpg">
+            <div class="card-content">
+                <div class="card-title">
+                    <span>Kheer</span>
+                    <span class="price">Rs. 200</span>
+                </div>
+                <div class="card-desc">Rice pudding with milk</div>
+            </div>
+        </div>
+
+         <div class="card">
+            <img src="images/gajarhalwa.jpg">
+            <div class="card-content">
+                <div class="card-title">
+                    <span>Gajar halwa</span>
+                    <span class="price">Rs. 150</span>
+                </div>
+                <div class="card-desc">Traditional sweet dessert made from grated carrots, slow-cooked in milk, sugar, and garnished with nuts</div>
+            </div>
+        </div>
+
+         <div class="card">
+            <img src="images/Jalebi.jpg">
+            <div class="card-content">
+                <div class="card-title">
+                    <span>Jalebi</span>
+                    <span class="price">Rs. 150</span>
+                </div>
+                <div class="card-desc">Crispy spiral-shaped sweet soaked in sugar syrup, giving a crunchy and juicy taste</div>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="images/Sheer khurma.jpg">
+            <div class="card-content">
+                <div class="card-title">
+                    <span>SheerKhurma</span>
+                    <span class="price">Rs. 150</span>
+                </div>
+                <div class="card-desc">Traditional dessert made with milk, vermicelli, dates, and nuts, rich and creamy in taste</div>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="images/cookies.jpg">
+            <div class="card-content">
+                <div class="card-title">
+                    <span>Cookies</span>
+                    <span class="price">Rs. 150</span>
+                </div>
+                <div class="card-desc">Freshly baked soft and crunchy cookies with a rich buttery flavor</div>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="images/donut.jpg">
+            <div class="card-content">
+                <div class="card-title">
+                    <span>Donuts</span>
+                    <span class="price">Rs. 150</span>
+                </div>
+                <div class="card-desc">Soft and fluffy fried dough rings glazed with sugar or chocolate for a sweet treat</div>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+<!--footor-->
+<footer class="footer">
+  <div class="footer-container">
+
+    <!-- Column 1 -->
+    <div class="footer-col">
+      <h2 class="logo">Spice Hub</h2>
+      <p>
+        Experience fine dining at its finest. Fresh ingredients, expert
+        preparation, unforgettable flavors.
+      </p>
+    </div>
+
+    <!-- Column 2 -->
+    <div class="footer-col">
+      <h3>Contact</h3>
+      <p><span>📍</span> 123 Culinary Street, Foodie District, NY 10001</p>
+      <p><span>📞</span> (555) 123-4567</p>
+      <p><span>✉</span> info@SpiceHub.com</p>
+    </div>
+
+    <!-- Column 3 -->
+    <div class="footer-col">
+      <h3>Hours</h3>
+      <p><span>🕒</span>Mon - Thu: 11:00 AM - 10:00 PM</p>
+      <p><span>🕒</span>Fri - Sat: 11:00 AM - 11:00 PM</p>
+      <p><span>🕒</span>Sunday: 10:00 AM - 9:00 PM</p>
+    </div>
+
+    <!-- Column 4 -->
+    <div class="footer-col">
+      <h3>Follow Us</h3>
+      <div class="social-links">
+        <a href="#">Facebook</a><br>
+        <a href="#">Instagram</a><br>
+        <a href="#">Twitter</a><br>
+      </div>
+    </div>
+
+  </div>
+
+  <hr>
+
+  <p class="copyright">
+    © 2026 Spice Hub Restaurant. All rights reserved.
+  </p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
