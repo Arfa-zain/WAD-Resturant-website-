@@ -1,11 +1,11 @@
-# 🍽️ Spice Hub – Restaurant Website System
+# Spice Hub – Restaurant Website System
 
 A modern and responsive restaurant website system developed using **HTML, CSS, JavaScript, PHP, and MySQL**.  
 This project was created for the **Web Application Development** course at Riphah International University. 
 
 ---
 
-# 📖 Project Overview
+# Project Overview
 
 The Restaurant Website System is a web-based application that allows customers to:
 
@@ -20,7 +20,7 @@ The system also provides an admin panel where administrators can manage reservat
 
 ---
 
-# 🎯 Objectives
+# Objectives
 
 - Develop a responsive restaurant website
 - Display menu items with images and pricing
@@ -31,9 +31,9 @@ The system also provides an admin panel where administrators can manage reservat
 
 ---
 
-# 🚀 Features
+# Features
 
-## 👨‍🍳 Customer Features
+## Customer Features
 
 - Responsive homepage
 - Food menu categories
@@ -47,7 +47,7 @@ The system also provides an admin panel where administrators can manage reservat
 
 ---
 
-## 🔐 Admin Features
+## Admin Features
 
 - Secure admin login
 - Manage menu items
@@ -58,7 +58,7 @@ The system also provides an admin panel where administrators can manage reservat
 
 ---
 
-# 🛠️ Technologies Used
+# Technologies Used
 
 | Technology | Purpose |
 |---|---|
